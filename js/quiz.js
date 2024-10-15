@@ -102,10 +102,9 @@ const startStep = {
                     <img class="quiz-img" src="img/quiz.jpg">
                 </div>
                 <div class="col-lg-6 col-md-6 col-lg-6">
-                    <h2 class="title">КвотаФинансХаб</h2>
+                    <h2 class="title">ИнвестИИ</h2>
+                    <h3>Eзнай свой уровень знаний и получи доступ к бесплатному курсу по инвестициям</h3>
                     <button class="btn btn-primary w-50 py-3 first-button" data-action="startQuiz">Начать</button>
-                    <h3>КАК СТАТЬ УСПЕШНЫМ ТРЕЙДЕРОМ, УДЕЛЯЯ ВСЕГО 20 МИНУТ В ДЕНЬ?</h3>
-                    <h6 style="margin-bottom: 20px">Пройди опрос и получите БЕСПЛАТНО Топ-5 стратегий, которые помогут улучшить торговлю и увеличить доход</h6>
                 </div>
             </div>
         </div>
@@ -195,7 +194,7 @@ const finalStep = {
         <div class="container quiz-wrapper">
             <div class="row quiz-content">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h2 class="title">КвотаФинансХаб</h2>
+                    <h2 class="title">ИнвестИИ</h2>
                     <h3>Заполни форму для получения БЕСПЛАТНЫХ Топ-5 эффективных стратегий в криптотрейдинге</h3>
                     <form>
                         <input class="form-control" name="name" type="name" placeholder="Имя" required>

@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #d2c900;
+    --primary: #006b38ff;
     --light: #f1f8ff;
     --dark: #111a24;
 }
@@ -444,9 +444,8 @@
 
 .cookie-wrapper {
     position: fixed;
-    bottom: 50px;
-    left: 50px;
-    width: 40%;
+    bottom: 0px;
+    width: 100%;
     background: #fff;
     padding: 15px 25px 22px;
     transition: right 0.3s ease;
@@ -472,12 +471,12 @@
     display: none;
 }
 header i {
-    color: #d2c900;
+    color: #006b38ff;
     font-size: 32px;
     text-align: center;
 }
 header h2 {
-    color: #d2c900;
+    color: #006b38ff;
     font-weight: 500;
     text-align: center;
 }
@@ -485,7 +484,7 @@ header h2 {
     text-align: center;
 }
 .data p a {
-    color: #d2c900;
+    color: #006b38ff;
     text-decoration: none;
     text-align: center !important;
 }
@@ -497,10 +496,10 @@ header h2 {
     text-align: center;
 }
 .buttons .cookie-button {
-    border: 2px solid #d2c900;
+    border: 2px solid #006b38ff;
     color: #fff;
     padding: 8px 0;
-    background: #d2c900;
+    background: #006b38ff;
     cursor: pointer;
     width: calc(100% / 2 - 10px);
     transition: all 0.5s ease;
@@ -509,14 +508,14 @@ header h2 {
 }
 .buttons #acceptBtn:hover {
     background-color: transparent;
-    color: #d2c900;
+    color: #006b38ff;
 }
 #declineBtn {
     background-color: #fff;
-    color: #d2c900;
+    color: #006b38ff;
 }
 #declineBtn:hover {
-    background-color: #d2c900;
+    background-color: #006b38ff;
     color: #fff;
 }
 /* Footer Style */
@@ -540,7 +539,7 @@ header h2 {
 }
 
 .quiz-content .title {
-    color: #d2c900;
+    color: #006b38ff;
     margin-bottom: 20px;
 }
 
