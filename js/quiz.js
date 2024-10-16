@@ -143,9 +143,10 @@ const finalStep = {
                     <h2 class="title">ИнвестИИ</h2>
                     <h3>Заполни форму узнай чтобы получить свой бесплатный курс по инвестициям!</h3>
                     <form>
-                        <input class="form-control" name="name" type="name" placeholder="Имя" required>
-                        <input class="form-control" name="email" type="email" placeholder="Email" required>
-                        <input class="form-control" name="phone" type="phone" placeholder="Номер" required>
+                        <input class="form-control" name="name" type="name" placeholder="Имя">
+                        <input class="form-control" name="email"  id="email2" type="email" placeholder="Email">
+                        <div id="validation" style="color: red"></div>
+                        <input class="form-control" name="phone" type="number" id="phone" step="0.01" placeholder="Номер">
                         
                         ${Object.keys(quiz.answers)
                             .map(
@@ -157,15 +158,31 @@ const finalStep = {
                         <button data-action="submitAnswers" class="btn btn-primary w-50 py-3">Отправить</button>
                     </form>
                 </div>
+                <div class="col-lg-6 col-md-6 col-lg-6">
+                    <img class="quiz-img" src="img/quiz-2.jpg">
+                </div>
             </div>
         </div>
       `;
     },
     onClick: (el) => {
         if (el.getAttribute('data-action') === 'submitAnswers') {
-            localStorage.setItem('quizDone', true);
-            document.getElementById('quiz-page').classList.add('hide');
-            window.location.href = 'thanks.html';
+            // Get the input value
+            const emailInput = document.getElementById('email2').value;
+
+            // Regular expression for basic email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            // Test the input against the regular expression
+            if (emailRegex.test(emailInput)) {
+                document.getElementById('validation').textContent = '';
+                window.location.href = 'thanks.html';
+                localStorage.setItem('quizDone', true);
+                document.getElementById('quiz-page').classList.add('hide');
+            } else {
+                document.getElementById('validation').textContent =
+                    'Неверный адрес электронной почты. Пожалуйста, введите действительный адрес электронной почты.';
+            }
         }
     },
 };
